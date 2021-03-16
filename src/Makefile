@@ -1,5 +1,5 @@
 make:
-	ghdl -a --std=93c \
+	ghdl -a --std=93c --ieee=synopsys\
 		 utils_pkg.vhdl \
 		 time_keeper.vhdl \
 		 top_level.vhdl \

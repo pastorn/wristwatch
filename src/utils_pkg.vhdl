@@ -14,13 +14,10 @@ package utils_pkg is
   --- TYPES
   ----------------------------------------
   type time_data is record
-    -- to represent 0 to  24:  five bits (16)
-    hours     : std_logic_vector(4 downto 0);
-    -- to represent 0 to  60:   six bits (32)
-    minutes   : std_logic_vector(5 downto 0);
-    seconds   : std_logic_vector(5 downto 0);
-    -- to represent 0 to 100: seven bits (64)
-    hundreds  : std_logic_vector(6 downto 0);
+    hrs : natural range 0 to 23;
+    min : natural range 0 to 59;
+    sec : natural range 0 to 59;
+    hun : natural range 0 to 99;
   end record time_data;
 
   ----------------------------------------
